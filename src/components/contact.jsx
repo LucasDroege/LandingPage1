@@ -93,17 +93,17 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  Enviar mensaje
                 </button>
               </form>
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
-              <h3>Contact Info</h3>
+              <h3>Informacion de contacto</h3>
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
+                  <i className="fa fa-map-marker"></i> Direccion
                 </span>
                 {props.data ? props.data.address : "loading"}
               </p>
@@ -111,7 +111,7 @@ export const Contact = (props) => {
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> Telefono
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
@@ -153,7 +153,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
+            &copy; 2026 Maldo al rescate. Design by{"Droege,Lucas Matias "}
             <a href="http://www.templatewire.com" rel="nofollow">
               TemplateWire
             </a>
