@@ -5,32 +5,15 @@ export const Contact = (props) => {
     <div>
       <div id="contact">
         <div className="container">
-          <div className="col-md-8">
-            <div className="row">
-              <div className="section-title">
-                <h2>Contactanos por WhatsApp</h2>
-                <p>
-                  ¿Necesitás más información sobre nuestros servicios?
-                  Escribinos por WhatsApp y te responderemos a la brevedad.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <a
-                  href="https://wa.me/5491123456789?text=Hola%2C%20quiero%20mas%20informacion%20sobre%20sus%20servicios."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-custom btn-lg"
-                >
-                  <i className="fa fa-whatsapp"></i> Contactar por WhatsApp
-                </a>
-              </div>
+          {/* Centramos toda la información institucional en el medio de la pantalla */}
+          <div className="col-md-8 col-md-offset-2 text-center">
+            <div className="section-title">
+              <h2>Contacto</h2>
+              <p>Póngase en contacto con nosotros a través de nuestros canales oficiales.</p>
             </div>
-          </div>
 
-          <div className="col-md-3 col-md-offset-1 contact-info">
+            {/* Bloque de Dirección */}
             <div className="contact-item">
-              <h3>Información de contacto</h3>
               <p>
                 <span>
                   <i className="fa fa-map-marker"></i> Dirección
@@ -39,6 +22,7 @@ export const Contact = (props) => {
               </p>
             </div>
 
+            {/* Bloque de Teléfono */}
             <div className="contact-item">
               <p>
                 <span>
@@ -48,6 +32,7 @@ export const Contact = (props) => {
               </p>
             </div>
 
+            {/* Bloque de Email */}
             <div className="contact-item">
               <p>
                 <span>
@@ -58,22 +43,23 @@ export const Contact = (props) => {
             </div>
           </div>
 
+          {/* Redes Sociales */}
           <div className="col-md-12">
             <div className="row">
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
+                    <a href={props.data ? props.data.facebook : "/"} target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
+                    <a href={props.data ? props.data.twitter : "/"} target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
+                    <a href={props.data ? props.data.youtube : "/"} target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-youtube"></i>
                     </a>
                   </li>
@@ -84,13 +70,11 @@ export const Contact = (props) => {
         </div>
       </div>
 
+      {/* Footer */}
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2026 Maldo al rescate. Design by {"Droege,Lucas Matias "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; 2026 Soluciones Eléctricas 24hs. Web design by {"Droege,Lucas Matias "}
           </p>
         </div>
       </div>

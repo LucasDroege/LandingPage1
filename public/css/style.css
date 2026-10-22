@@ -460,17 +460,18 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: rgba(255, 255, 255, 0.75);
+  background: #f8f9fa; /* Un gris sutil de fondo para que los bloques blancos resalten al máximo */
+  color: #555555;      /* Texto general en gris oscuro */
 }
 #contact .section-title {
   margin-bottom: 40px;
 }
 #contact .section-title p {
   font-size: 16px;
+  color: #666666;      /* Texto de bajada legible */
 }
 #contact h2 {
-  color: #fff;
+  color: #222222;      /* Título principal en negro/gris oscuro */
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -478,18 +479,17 @@ header .intro-text {
 #contact .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: #5ca9fb; /* La línea decorativa ahora usa el azul de tu marca */
   height: 4px;
   width: 60px;
   bottom: 0;
   left: 30px;
 }
 #contact h3 {
-  color: #fff;
-  margin-top: 80px;
+  color: #222222;      /* Título de información de contacto en oscuro */
+  margin-top: 0px;     /* Alinea la altura con el bloque izquierdo */
   margin-bottom: 25px;
-  padding-bottom: 20px;
-  font-weight: 400;
+  font-weight: 600;
 }
 #contact form {
   padding-top: 20px;
@@ -498,15 +498,26 @@ header .intro-text {
   color: #cc0033;
   text-align: left;
 }
+
+/* Ajustes optimizados para el botón de WhatsApp */
 #contact .btn-custom {
   margin: 30px 0;
-  background: transparent;
-  border: 2px solid #fff;
+  background: #25d366; 
+  color: #ffffff !important;
+  border: 2px solid #25d366;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
-  background: #fff;
+  color: #25d366 !important;
+  background: #ffffff;
+  border: 2px solid #25d366;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
 }
+
 label {
   font-size: 12px;
   font-weight: 400;
@@ -524,45 +535,55 @@ label {
   background-image: none;
   border: 1px solid #ddd;
   border-radius: 0;
-  -webkit-box-shadow: none;
   box-shadow: none;
-  -webkit-transition: none;
-  -o-transition: none;
   transition: none;
 }
 #contact .form-control:focus {
   border-color: #999;
   outline: 0;
-  -webkit-box-shadow: transparent;
   box-shadow: transparent;
 }
-.form-control::-webkit-input-placeholder {
-  color: #777;
-}
-.form-control:-moz-placeholder {
-  color: #777;
-}
-.form-control::-moz-placeholder {
-  color: #777;
-}
-.form-control:-ms-input-placeholder {
-  color: #777;
-}
+.form-control::-webkit-input-placeholder { color: #777; }
+.form-control:-moz-placeholder { color: #777; }
+.form-control::-moz-placeholder { color: #777; }
+.form-control:-ms-input-placeholder { color: #777; }
+
+/* NUEVOS RECUADROS EN BLANCO PURO Y TRIDIMENSIONALES */
 #contact .contact-item {
-  margin: 20px 0;
+  background: #ffffff;         /* Blanco puro */
+  padding: 18px 20px;          /* Separación interna */
+  margin: 15px 0;              /* Separación externa entre tarjetas */
+  border-radius: 8px;          /* Bordes redondeados modernos */
+  border: 1px solid #eaeaea;   /* Contorno limpio */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* Relieve flotante */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#contact .contact-item:hover {
+  transform: translateY(-2px); /* Pequeña elevación interactiva */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 #contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
-  margin-bottom: 10px;
+  color: #5ca9fb;              /* Las etiquetas (Dirección, Teléfono) ahora son azules */
+  font-weight: 700;
+  margin-bottom: 6px;
   display: block;
+  font-size: 14px;
+}
+#contact .contact-item p {
+  margin: 0;
+  color: #444444;              /* Los datos se leen perfectamente en gris oscuro */
+  font-size: 14px;
 }
 #contact .contact-item i.fa {
-  margin-right: 10px;
+  margin-right: 8px;
+  font-size: 15px;
 }
+
+/* REDES SOCIALES ADAPTADAS AL FONDO CLARO */
 #contact .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 50px;
-  margin-top: 50px;
+  border-top: 1px solid #e0e0e0; /* Línea divisoria gris claro */
+  padding-top: 40px;
+  margin-top: 40px;
   text-align: center;
 }
 #contact .social ul li {
@@ -573,16 +594,17 @@ label {
   font-size: 22px;
   width: 48px;
   height: 48px;
-  padding: 12px 0;
-  border: 2px solid #fff;
-  color: #fff;
+  padding: 11px 0;
+  border: 2px solid #5ca9fb;   /* Círculo del color de tu marca */
+  color: #5ca9fb;              /* Icono del color de tu marca */
   border-radius: 50%;
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #608dfd;
-  background: #fff;
+  color: #fff;
+  background: #5ca9fb;         /* Se rellena de azul al pasar el mouse */
 }
+
 /* Footer Section*/
 #footer {
   background: #f6f6f6;
@@ -602,5 +624,74 @@ label {
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+}
+/* Contenedor flotante en la parte inferior y centrado horizontalmente */
+.btn-flotantes-contenedor {
+  position: fixed;
+  bottom: 20px;             /* Distancia desde el borde inferior de la pantalla */
+  left: 50%;                /* Lo mueve al centro horizontal */
+  transform: translateX(-50%); /* Ajuste perfecto para que quede milimétricamente centrado */
+  z-index: 9999;            /* Por encima de todo el contenido */
+  display: flex;
+  flex-direction: row;      /* Pone los botones uno al lado del otro */
+  gap: 16px;                /* Separación entre el botón de llamada y el de WhatsApp */
+  background-color: rgba(255, 255, 255, 0.85); /* Fondo sutil para que no se pierdan con el contenido de atrás */
+  padding: 8px 16px;
+  border-radius: 50px;
+  backdrop-filter: blur(5px); /* Efecto esmerilado moderno */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo base para cada botón */
+.btn-flotante {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 14px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-flotante:hover {
+  transform: scale(1.05);
+}
+
+/* Color Verde para WhatsApp */
+.btn-flotante.whatsapp {
+  background-color: #25d366;
+}
+.btn-flotante.whatsapp:hover {
+  background-color: #128c7e;
+}
+
+/* Color Azul para llamadas */
+.btn-flotante.llamar {
+  background-color: #007bff;
+}
+.btn-flotante.llamar:hover {
+  background-color: #0056b3;
+}
+
+/* Optimización para pantallas muy pequeñas (celulares) */
+@media (max-width: 480px) {
+  .btn-flotantes-contenedor {
+    bottom: 10px;
+    gap: 8px;
+    padding: 6px 12px;
+    width: 90%; /* Ocupa casi todo el ancho en celulares pequeños */
+    justify-content: center;
+  }
+  
+  .btn-flotante {
+    padding: 10px 14px;
+    font-size: 13px;
+    flex: 1; /* Hace que ambos botones midan exactamente lo mismo */
   }
 }
